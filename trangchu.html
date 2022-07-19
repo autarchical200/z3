@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <title>Đồ án</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="menu1">
+        <div class="row">
+          <div class="col-6">
+            <nav class="navbar navbar-expand-sm navbar-inverse menu-left">
+              <div class="navbar-collapse collapse">
+                <ul class="navbar-nav nav">
+                  <li class="nav-link active" aria-current="page" href="Xemay.html">TRANG CHỦ</li>
+                  <li class="nav-link" href="#">PHỤ TÙNG</li>
+                  <li class="nav-link" href="#">CHỢ XE MÁY</li>
+                  <li class="nav-link ">TIN TỨC</li>
+                  <li class="nav-link ">ĐẠI LÝ</li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-6 ">
+            <nav class="navbar navbar-inverse navbar-expand-sm menu-right">
+              <div class="navbar-collapse collapse">
+                <ul class="navbar-nav nav">
+                  <li><i class="bi bi-messenger icon"></i> </li>
+                  <li><i class="bi bi-facebook icon"></i> </li>
+                  <li><i class="bi bi-tiktok icon"></i> </li>
+                  <li><i class="bi bi-twitch icon"></i></li>
+                  <li><a class="text-light" href="form-login.html">Đăng nhập</a></li>
+                  <li><a class="text-light" href="form-regis.html">Đăng kí</a></li>
+                  <li><i class="bi bi-person-circle icon"></i></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="menu2 ">
+        <div class="row">
+          <div class="col-3 ">
+            <a href="trangchu.html"><img class="logo" src="anhdoan/logo.png" alt=""></a>
+          </div>
+          <div class="col-5 mt-3">
+            <div class="search">
+              <input type="text" class="form-control input-sm rounded-0" placeholder="Nhập sản phẩm bạn muốn tìm..." />
+              <button type="submit" class="btn btn-danger right"><i class="bi bi-search"></i> Tìm kiếm</button>
+            </div>
+          </div>
+          <div class="col-4 nutphu ">
+            <div class="btn-group ">
+              <nav class="navbar navbar-expand-sm">
+                <div class="navbar-collapse collapse">
+                  <ul class="navbar-nav nav">
+                    <li><button class="btn btn-outline-danger nutphuphu btn-danger text-light rounded-0" type="button">
+                        <i class="bi bi-bookmarks"></i>
+                        Đăng bán xe
+                      </button>
+                    </li>
+                    <li><button id="cart" class="btn  btn-outline-danger nutphuphu btn-danger text-light rounded-0"
+                        type="button">
+                        <i class="bi bi-bag-check"></i>
+                        Giỏ hàng
+                      </button>
+                      <div id="myModal" class="modal" width="600px;">
+                        <div class=" modal-dialog-centered justify-content-center">
+                          <div class="modal-content" style="background-color:rgba(0, 0, 0, 0.842);">
+                            <div class="modal-header" style="background-color:rgb(201, 21, 21);">
+                              <h5 class="modal-title text-light">Giỏ Hàng <i class="bi bi-cart4"></i></h5>
+                              <span class="close btn-close"></span>
+                            </div>
+
+                            <div class="modal-body">
+                              <div class="cart-row">
+                                
+                                <span class="cart-item cart-header cart-column text-light">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column text-light">Giá</span>
+                                <span class="cart-quantity cart-header cart-column text-light">Số Lượng</span>
+                              
+                              </div>
+                              <div class="cart-items">
+                
+                              </div>
+                              <div class="modal-footer">
+                                <div class="cart-total">
+                                  <strong class="cart-total-title  text-light">Tổng cộng: </strong>
+                                  <span class="cart-total-price">0VNĐ</span>
+                                </div>
+                                <button type="button" class="btn btn-danger text-light close-footer">Đóng</button>
+                                <button type="button" class="btn btn-success order text-light">Thanh Toán</button>
+                              </div>
+                            </div>
+                          </div>
+                    </li>
+                    <li><button class="btn btn-outline-danger rounded-pill nutphuphu btn-danger text-light"
+                        type="button">
+                        <i class="bi bi-briefcase-fill"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        </form>
+      </div>
+  </div>
+  <div class="menu3">
+    <nav class="navbar navbar-expand-sm ">
+
+      <ul class="navbar-nav nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-bookmark-plus"></i> TẤT CẢ XE
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">PKL</a></li>
+            <li><a class="dropdown-item" href="#">Ga</a></li>
+            <li><a class="dropdown-item" href="#">Côn</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-receipt-cutoff"></i> HÃNG XE
+          </a>
+          <ul class="dropdown-menu    " aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">SH</a></li>
+            <li><a class="dropdown-item" href="#">Wave</a></li>
+            <li><a class="dropdown-item" href="#">Yupitor</a></li>
+            <li><a class="dropdown-item" href="#">SH</a></li>
+            <li><a class="dropdown-item" href="#">Wave</a></li>
+            <li><a class="dropdown-item" href="#">Yupitor</a></li>
+            <li><a class="dropdown-item" href="#">SH</a></li>
+            <li><a class="dropdown-item" href="#">Wave</a></li>
+            <li><a class="dropdown-item" href="#">Yupitor</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-capslock"></i> PHÂN KHỐI LỚN
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-menu-button-wide"></i> LOẠI XE
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-hospital"></i> TỈNH THÀNH
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-graph-up-arrow"></i> XẾP LOẠI DÒNG XE
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-hand-thumbs-up"></i> TƯ VẤN CHỌN XE
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-gear-fill"></i></i> BẢO HÀNH
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-search"> </i>TÌM KIẾM
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+  </div>
+
+  </header>
+  <div class="noidung1">
+    <div class="banner1">
+      <div id="carouselExampleIndicators" class="carousel slide effect overflow-hidden " data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img style="height: 280px;" src="anhdoan/span.jpg" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item ">
+            <img style="height: 280px;" src="anhdoan/span3.jpg" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="bieutuong mb-3 mt-4">
+      <div class="row row-cols-9 g-0">
+      
+        <div class="title-second ">
+          <h6 class="left m-lg-3">Hãng xe</h6>
+          <a class="right m-lg-3" href="#"> Xem tất cả</a>
+        </div>
+        <div class="col">
+          <div class="card m-3">
+
+            <div class="card-body">
+              <img class="img-s" src="anhdoan/ic2.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3">
+
+            <div class="card-body">
+              <img class="img-s" src="anhdoan/ic3.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3">
+
+            <div class="card-body">
+              <img class="img-s" src="anhdoan/ic4.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card  m-3">
+
+            <div class="card-body">
+              <img class="img-s" src="anhdoan/ic5.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card  m-3">
+
+            <div class="card-body">
+              <img class="img-s" src="anhdoan/ic6.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3">
+
+            <div class="card-body">
+              <img class="img-s" src="anhdoan/ic7.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3">
+
+            <div class="card-body">
+              <img class="img-s" src="anhdoan/ic8.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3">
+
+            <div class="card-body">
+              <img class="img-s" src="anhdoan/ic 9.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3">
+
+            <div class="card-body">
+              <img class="img-s" src="anhdoan/ic10.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-9 g-0">
+        <div class="title-second ">
+          <h6 class="left m-lg-3">Theo loại xe</h6>
+          <a class="right m-lg-3" href="#"> Xem tất cả</a>
+        </div>
+        <div class="col">
+          <div class="m-3">
+
+
+            <img class="img-2" src="anhdoan/ic11.jpg" class="card-img-top" alt="">
+            <h6 class="text-center">Xe tay ga</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" m-3">
+
+
+            <img class="img-2" src="anhdoan/ic12.jpg" class="card-img-top" alt="">
+            <h6 class="text-center">Naked bike</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" m-3">
+
+
+            <img class="img-2" src="anhdoan/ic13.jpg" class="card-img-top" alt="">
+            <h6 class="text-center">Xe côn tay</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class="m-3">
+
+
+            <img class="img-2" src="anhdoan/ic14.jpg" class="card-img-top" alt="">
+            <h6 class="text-center">Street Fight</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" m-3">
+
+
+            <img class="img-2" src="anhdoan/ic15.jpg" class="card-img-top" alt="">
+            <h6 class="text-center">Cruiser</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" m-3">
+
+
+            <img class="img-2" src="anhdoan/ic16.jpg" class="card-img-top" alt="">
+            <h6 class="text-center">Classic</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" m-3">
+
+
+            <img class="img-2" src="anhdoan/ic17.jpg" class="card-img-top" alt="">
+            <h6 class="text-center">Chopper</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" m-3">
+
+
+            <img class="img-2 " src="anhdoan/ic18.jpg" class="card-img-top" alt="">
+            <h6 class="text-center">Bobber</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class="m-3">
+
+
+            <img class="img-2" src="anhdoan/ic19.jpg" class="card-img-top" alt="">
+            <h6 class="text-center">Drag</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner2">
+      <div class="mb-4">
+        <div class="row">
+          <div class="col-6">
+            <img class="effect2 banner3" src="anhdoan/banner2-1.png" alt="">
+          </div>
+          <div class="col-6">
+            <img class="effect2 banner3" src="anhdoan/banner2-2.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 card-item product">
+          <div class="mt-1" style="background-color:rgb(211, 15, 32); margin-left:2px;">
+            <img  style="margin-left:280px;" src="anhdoan/span1.png" alt="">
+          </div>
+          <div class="row row-cols-1 row-cols-md-6 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden">
+                  <img src="anhdoan/chitiet.jpg" class="card-img-top zoom w-100" alt="...">
+                </div>
+                <i class="bi bi-heart unlike"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Kawasaki Z900 Đỏ Đen - 2017</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">105,000,000 vnđ</h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          2 ngày trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger"><a class="text-light text-decoration-none"
+                            href="trangchitiet.html">Chi tiết</a></button>
+                        <button type="button" class="btn btn-dark them" 
+                          >Mua<span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger hot">
+                            Hot
+                            <span class="visually-hidden">unread messages</span></button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Đống Đa, Hà Nội
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden">
+                  <img src="anhdoan/2.jpg" class="card-img-top zoom w-100" alt="...">
+                </div>
+                <i class="bi bi-heart unlike"></i>
+                <div class="card-body">
+                  <h5 class="card-title">YAMAHA Sirius 50 cc daelim 2018 màu đen</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">5,000,000 vnđ</h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          16 giờ trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Chi tiết</button>
+                        <button type="button" class="btn btn-dark them">Mua<span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            15+
+                            <span class="visually-hidden">unread messages</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Đống Đa, Hà Nội
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden"><img src="anhdoan/3.jpg" class="card-img-top zoom w-100 "
+                    alt="..."></div>
+                <i class="bi bi-heart unlike"></i>
+                <div class="card-body">
+                  <h5 class="card-title">HONDA Wave 110 HQ up thái màu xanh</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">7,000,000 vnđ</h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          1 tuần trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Chi tiết</button>
+                        <button type="button" class="btn btn-dark them">Mua</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Quận 1, Hồ Chí Minh
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden"><img src="anhdoan/4.jpg" class="card-img-top zoom w-100"
+                    alt="..."></div>
+                <i class="bi bi-heart unlike"></i>
+                <div class="card-body">
+                  <h5 class="card-title">HARLEY-DAVIDSON Fat Boy Đen - 2020</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">749,000,000 vnđ</h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          7 giờ trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Chi tiết</button>
+                        <button type="button" class="btn btn-dark them">Mua</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Đống Đa, Hà Nội
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden"><img src="anhdoan/13.jpeg" class="card-img-top zoom w-100"
+                    alt="..."></div>
+                <i class="bi bi-heart unlike"></i>
+                <div class="card-body">
+                  <h5 class="card-title">HONDA SH Mode 125 2020 màu đỏ đen</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">71,900,000 vnđ </h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          20 giờ trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Chi tiết</button>
+                        <button type="button" class="btn btn-dark them">Mua</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Đống Đa, Hà Nội
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden"><img src="anhdoan/14.jpg" class="card-img-top zoom w-100"
+                    alt="..."></div>
+                <i class="bi bi-heart unlike"></i>
+                <div class="card-body">
+                  <h5 class="card-title">HONDA SH 150i ABS 2019 màu trắng</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">118,900,000 vnđ </h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          3 ngày trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Chi tiết</button>
+                        <button type="button" class="btn btn-dark them">Mua</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Phú Nhuận, HCM
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3" style="background-color:rgb(211, 15, 32); margin-left: 3px;">
+            <img  style="margin-left:280px;" src="anhdoan/span1-2.png" alt="">
+          </div>
+          <div class="row row-cols-1 row-cols-md-6 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden"><img src="anhdoan/7.jpeg" class="card-img-top zoom w-100 "
+                    alt="..."></div>
+                <i class="bi bi-heart unlike"></i>
+                <div class="card-body">
+                  <h5 class="card-title">HONDA SH 125i CBS 2016 màu trắng</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">75,000,000 vnđ</h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          21 giờ trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button " class="btn btn-danger">Chi tiết</button>
+                        <button type="button " class="btn btn-dark them">Mua<span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger hot">
+                          Hot
+                          <span class="visually-hidden">unread messages</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Đống Đa, Hà Nội
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden"><img src="anhdoan/8.jpg" class="card-img-top zoom w-100 "
+                    alt="..."> </div>
+                <i class="bi bi-heart unlike"></i>
+                </span>
+                <div class="card-body">
+                  <h5 class="card-title">HONDA Dòng khác Đen Đỏ - 2010</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">7,900,000 vnđ</h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          1 giờ trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Chi tiết</button>
+                        <button type="button" class="btn btn-dark them">Mua <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger hot">
+                          Hot
+                          <span class="visually-hidden">unread messages</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Hải Châu, Đà Nẵng
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden"><img src="anhdoan/9.jpg" class="card-img-top zoom w-100 "
+                    alt="..."> </div>
+                <i class="bi bi-heart unlike"></i>
+                <div class="card-body">
+                  <h5 class="card-title">YAMAHA Jupiter MX 2007 màu đen đỏ</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">6,500,000 vnđ </h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          22 giờ trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Chi tiết</button>
+                        <button type="button" class="btn btn-dark them">Mua <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger hot">
+                          Hot
+                          <span class="visually-hidden">unread messages</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  An Lão, Hải Phòng
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden"><img src="anhdoan/10.jpg" class="card-img-top zoom w-100 "
+                    alt="..."> </div>
+                <i class="bi bi-heart unlike"></i>
+                <div class="card-body">
+                  <h5 class="card-title">YAMAHA Exciter 150 2015 Đen Đỏ</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">27,800,000 vnđ </h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          7 giờ trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Chi tiết</button>
+                        <button type="button" class="btn btn-dark them">Mua <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger hot">
+                          Hot
+                          <span class="visually-hidden">unread messages</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Quận 7, Hồ Chí Minh
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden"><img src="anhdoan/11.jpg" class="card-img-top zoom w-100 "
+                    alt="..."> </div>
+                <i class="bi bi-heart unlike"></i>
+                <div class="card-body">
+                  <h5 class="card-title">HONDA Future Đen Xnh Da Trời - 2000</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">27,900,000 vnđ </h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          4 ngày trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Chi tiết</button>
+                        <button type="button" class="btn btn-dark them">Mua <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger hot">
+                          Hot
+                          <span class="visually-hidden">unread messages</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Quảng Ngãi
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="w-100 h-100 overflow-hidden"><img src="anhdoan/12.jpeg" class="card-img-top zoom w-100 "
+                    alt="..."> </div>
+                <i class="bi bi-heart unlike"></i>
+                <div class="card-body">
+                  <h5 class="card-title">YAMAHA Nouvo 4 2011 màu đen</h5>
+                  <div class="info-card">
+                    <h6 class="text-danger price">8,000,000 vnđ</h6>
+                    <div class="source">
+                      <span class="condition">
+                        Xe cũ
+                      </span>
+                      <span class="time">
+                        <i>
+                          6 giờ trước...
+                        </i>
+                      </span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Chi tiết</button>
+                        <button type="button" class="btn btn-dark them">Mua <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger hot">
+                          Hot
+                          <span class="visually-hidden">unread messages</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Bình CHÁNH, HCM
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h5 class="text-center mt-4">
+            <button class="btn btn-dark m-3"><i class="bi bi-arrow-down-circle"> </i>Xem thêm
+              xe</button>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="noidung2 mt-5 mb-0">
+    <div class="container-fluid box-area p-md-5">
+      <div class="row">
+        <div class=" text-center">
+          <div class="mb-2 overflow-hidden" style="background-color:rgb(211, 15, 32); margin-right: -13px;">
+            <img  style="margin-left:25px;" src="anhdoan/span1-3.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 cot1 ">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="anhdoan/bot1.jpg" class="d-block " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class=" p-2">7 mẫu xe tay ga phân khối lớn sử dụng nhiều ở Việt Nam</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="anhdoan/bot2.jpg" class="d-block " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class=" p-md-2">Lý do khiến mẫu xe Honda Vision tăng đột biến</h5>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="anhdoan/bot3.jpg" class="d-block " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class=" p-md-2">GPX Legend 250 Twin III 2022 bản nâng cấp mới tại Thái Lan</h5>
+
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6 cot2 pt-2 text-light ">
+          <div class="row mt-2">
+            <div class="col-md-3">
+              <img class="" src="anhdoan/bot7.jpg" alt="">
+            </div>
+            <div class="col-md-8">
+              <p>10 Tính năng các mà biker Việt nên biết về Yamaha. </p>
+              <p class="ngay">Ngày đăng 30-6-2022</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row mt-1">
+            <div class="col-md-3">
+              <img src="anhdoan/bot4.jpg" alt="">
+            </div>
+            <div class="col-md-8">
+              <p>10 Tính năng các mà biker Việt nên biết về Yamaha.</p>
+              <p class="ngay">Ngày đăng 30-6-2022</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row mt-1">
+            <div class="col-md-3">
+              <img src="anhdoan/bot5.jpg" alt="">
+            </div>
+            <div class="col-md-8">
+              <p>10 Tính năng các mà biker Việt nên biết về Yamaha.</p>
+              <p class="ngay">Ngày đăng 30-4-2022</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row mb-2">
+            <div class="col-md-3  ">
+              <img src="anhdoan/bot6.jpg" alt="">
+            </div>
+            <div class="col-md-8">
+              <p>10 Tính năng các mà biker Việt nên biết về Yamaha.</p>
+              <p class="ngay">Ngày đăng 30-6-2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="noidung3 mb-3">
+    <section>
+      <div class="container-fluid p-md-5">
+          <div class="title-second">
+              <h6 class="name ">Dòng xe được xem nhiều nhất <a class="right" href="#">
+                  Xem tất cả
+              </a>
+              </h6>
+          </div>
+          <div class="grid-item-slide ">
+              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row anhdemo">
+                          <div class="col-md-2 ">
+                              <img class=""src="anhdoan/c3.jpg" alt="">
+                              <h6 class="text-center "> Honda AirBlade 110</h6>
+                          </div>
+                          <div class="col-md-2">
+                              <img src="anhdoan/c2.jpg" alt="">
+                              <h6 class="text-center ">Honda WAVE 100 RS</h6>
+                          </div>
+                          <div class="col-md-2">
+                              <img src="anhdoan/c7.jpg" alt="">
+                              <h6 class="text-center ">YAMAHA Exciter 135</h6>
+                          </div>
+                          <div class="col-md-2">
+                              <img src="anhdoan/c4.png" alt="">
+                              <h6 class="text-center ">Honda Airblade 125 Fi</h6>
+                          </div>
+                          <div class="col-md-2">
+                              <img src="anhdoan/c5.jpg" alt="">
+                              <h6 class="text-center ">YAMAHA Sirius</h6>
+                          </div>
+                          <div class="col-md-2 ">
+                              <img src="anhdoan/c6.jpg" alt="">
+                              <h6 class="text-center ">Honda Vision 110</h6>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row  anhdemo">
+                          <div class="col-md-2">
+                              <img src="anhdoan/c7.jpg" alt="">
+                              <h6 class="text-center ">Honda AirBlade 110</h6>
+                          </div>
+                          <div class="col-md-2">
+                              <img src="anhdoan/c8.jpg" alt="">
+                              <h6 class="text-center">Honda SH 125</h6>
+                          </div>
+                          <div class="col-md-2">
+                              <img src="anhdoan/c9.jpg" alt="">
+                              <h6 class="text-center ">Honda Dream II</h6>
+                          </div>
+                          <div class="col-md-2">
+                              <img src="anhdoan/c10.jpg" alt="">
+                              <h6 class="text-center ">Honda Winner 150</h6>
+                          </div>
+                          <div class="col-md-2">
+                              <img src="anhdoan/c13.jpg" alt="">
+                              <h6 class="text-center ">Honda SH 150i</h6>
+                          </div>
+                          <div class="col-md-2">
+                              <img src="anhdoan/c12.jpg" alt="">
+                              <h6 class="text-center ">YAMAHA Exciter 150</h6>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon prev" aria-hidden="true"></span>
+                      <span class="visually-hidden text-danger">Previous</span>
+                    </button>
+                    <button class=" carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon next" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+          </div>
+      </div>
+  </section>
+  </div>
+  </div>
+  </div>
+  <footer>
+    <div class="footer1">
+      <div class="row">
+        <h5 class="text-danger mt-3 m-3"> Các từ khóa phổ biến</h5>
+        <div class="col-md-3">
+          <ul>
+            <li>Honda Winner X</li>
+            <li>Xe HONDA</li>
+            <li>Xe SUZUKI</li>
+            <li>Xe HARLEY-DAVIDSON</li>
+            <li>Xe KYMCO</li>
+            <li>Xe VISITOR</li>
+            <li>Xe GPX</li>
+            <li>Xe Kengo</li>
+            <li>Xe Bosscity</li>
+            <li>Xe Minsk</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul>
+            <li>Honda Winner X</li>
+            <li>Xe HONDA</li>
+            <li>Xe SUZUKI</li>
+            <li>Xe HARLEY-DAVIDSON</li>
+            <li>Xe KYMCO</li>
+            <li>Xe VISITOR</li>
+            <li>Xe GPX</li>
+            <li>Xe Kengo</li>
+            <li>Xe Bosscity</li>
+            <li>Xe Minsk</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li>Honda Winner X</li>
+            <li>Xe HONDA</li>
+            <li>Xe SUZUKI</li>
+            <li>Xe HARLEY-DAVIDSON</li>
+            <li>Xe KYMCO</li>
+            <li>Xe VISITOR</li>
+            <li>Xe GPX</li>
+            <li>Xe Kengo</li>
+            <li>Xe Bosscity</li>
+            <li>Xe Minsk</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li>Honda Winner X</li>
+            <li>Xe HONDA</li>
+            <li>Xe SUZUKI</li>
+            <li>Xe HARLEY-DAVIDSON</li>
+            <li>Xe KYMCO</li>
+            <li>Xe VISITOR</li>
+            <li>Xe GPX</li>
+            <li>Xe Kengo</li>
+            <li>Xe Bosscity</li>
+            <li>Xe Minsk</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer2">
+      <div class="row">
+        <div class="col-md-3 ">
+          <h6 class="text-light m-lg-4">THÔNG TIN LIÊN HỆ</h6>
+          <div class="basic-info m-lg-4">
+            <p>Lầu 20, tòa nhà Havana, số 132 Hàm Nghi, P. Bến Thành, Q.1, TP. HCM.</p>
+            <p>Email: support@webike.vn</p>
+            <p>Số bàn: 028 3821 0587</p>
+          </div>
+          <img class="w-75 m-lg-3" src="anhdoan/pay8.svg" alt="">
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-light m-lg-4">SIÊU THỊ PHỤ TÙNG</h6>
+          <ul class="text-light" t>
+            <li>Dòng xe</li>
+            <li>Hãng xe</li>
+            <li>Chính hãng</li>
+            <li>Phụ tùng</li>
+            <li>Đồ bảo hộ</li>
+            <li>Mũ bảo hộ </li>
+            <li>Phụ kiện</li>
+            <li>Thành viên</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-light m-lg-4">CHỢ XE MÁY</h6>
+          <ul class="text-light">
+            <li>Phân khối lớn</li>
+            <li>Hãng xe</li>
+            <li>Phân khối</li>
+            <li>Loại xe</li>
+            <li>Tỉnh thành</li>
+            <li>Cửa hàng</li>
+            <li>Tiện ích</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-light m-lg-4">TIN TỨC XE MÁY</h6>
+          <ul class="text-light">
+            <li>Quy chế hoạt động</li>
+            <li>Chính sách bảo mật</li>
+            <li>Bản quyền</li>
+            <li>Hỗ trợ khách hàng</li>
+            <li>Sơ đồ trang</li>
+            <li>Liên hệ</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="text-light m-lg-4">PHƯƠNG THỨC THANH TOÁN</h6>
+          <div class="thanhtoan">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="anhdoan/pay1.png" alt="">
+              </div>
+              <div class="col-md-3">
+                <img src="anhdoan/pay2.png" alt="">
+              </div>
+              <div class="col-md-3">
+                <img src="anhdoan/pay3.png" alt="">
+              </div>
+              <div class="col-md-3">
+                <img src="anhdoan/pay4.png" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class=" col-md-6">
+                <img src="anhdoan/pay5.png" alt="">
+              </div>
+              <div class="col-md-6">
+                <img src="anhdoan/pay6.png" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <img class="w-100 h-100" src="anhdoan/pay7.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer3 bg-dark pb-md-2">
+      <p class="text-light text-center pt-3">© 2022 Webike Vietnam. All rights reserved.</p> 
+      <div class="back-to-top">
+            <!-- import icon font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+<!-- Import thư viện JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+// kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+var offset = 500;
+// thời gian di trượt 0.75s ( 1000 = 1s )
+var duration = 20;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
+</script>
+<div title="Về đầu trang" id="top-up">
+<i class="fas fa-arrow-circle-up"></i></div>
+      </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

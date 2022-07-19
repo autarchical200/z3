@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Đồ án</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="menu1">
+                   <div class="row">
+                       <div class="col-6">
+                         <nav class="navbar navbar-expand-sm navbar-inverse menu-left">
+                             <div class="navbar-collapse collapse">
+                             <ul class="navbar-nav nav">
+                             <li class="nav-link active" aria-current="page" href="#">TRANG CHỦ</li>
+                             <li class="nav-link" href="#">PHỤ TÙNG</li>
+                             <li class="nav-link" href="#">CHỢ XE MÁY</li>
+                             <li class="nav-link ">TIN TỨC</li>
+                             <li class="nav-link ">ĐẠI LÝ</li>
+                             </ul>
+                           </div>
+                           </nav>
+                       </div>
+                       <div class="col-6 ">
+                         <nav class="navbar navbar-inverse navbar-expand-sm menu-right">
+                             <div class="navbar-collapse collapse">
+                             <ul class="navbar-nav nav">
+                             <li><i class="bi bi-messenger icon"></i> </li>
+                             <li><i class="bi bi-telegram icon"></i> </li>
+                             <li><i class="bi bi-tiktok icon"></i> </li>
+                             <li><i class="bi bi-twitch icon"></i></li>
+                             <li><a class="text-light" href="form-login.html">Đăng nhập</a></li>
+                            <li><a class="text-light" href="form-regis.html">Đăng kí</a></li>
+                             <li><i class="bi bi-person-circle icon"></i></li>
+                         </ul>
+                     </div>
+                         </nav>
+                       </div>
+                   </div>
+            </div>
+            <div class="menu2 ">
+                <div class="row">
+                    <div class="col-3 ">
+                       <a href="trangchu.html"><img class="logo" src="anhdoan/logo.png" alt=""></a>
+                    </div>
+                    <div class="col-5 mt-3">
+                       <div class="search">
+                            <input type="text" class="form-control input-sm" placeholder="Nhập sản phẩm bạn muốn tìm..." />
+                                <button type="submit" class="btn btn-danger right"><i class="bi bi-search"></i> Tìm kiếm</button>
+               </div>
+                    </div>
+                    <div class="col-4 nutphu ">
+                           <div class="btn-group ">
+                               <nav class="navbar navbar-expand-sm">
+                           <div class="navbar-collapse collapse">
+                               <ul class="navbar-nav nav">
+                               <li><button class="btn btn-outline-danger nutphuphu btn-danger text-light" type="button">
+                                   <i class="bi bi-bookmarks"></i>
+                                   Đăng bán xe
+                               </button>
+                               </li>
+                               <li><button class="btn  btn-outline-danger nutphuphu btn-danger text-light" type="button">
+                                   <i class="bi bi-bag-check"></i>
+                                   Giỏ hàng
+                               </button>
+                               
+                               </li>
+                               <li><button class="btn btn-outline-danger rounded-pill nutphuphu btn-danger text-light" type="button">
+                                   <i class="bi bi-briefcase-fill"></i>
+                               </button>
+                               </li>
+                           </ul>
+                       </div>
+                           </nav>
+                           </div>
+                    </div>
+                </div>
+                
+               </form>
+           </div>
+       </div>
+            <div class="menu3">
+             <nav class="navbar navbar-expand-sm ">
+                 
+                 <ul class="navbar-nav nav">
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-bookmark-plus"></i> TẤT CẢ XE
+                         </a>
+                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                             <li><a class="dropdown-item" href="#">PKL</a></li>
+                             <li><a class="dropdown-item" href="#">Ga</a></li>
+                             <li><a class="dropdown-item" href="#">Côn</a></li>
+                         </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-receipt-cutoff"></i> HÃNG XE
+                         </a>
+                         <ul class="dropdown-menu    " aria-labelledby="navbarDropdownMenuLink">
+                             <li><a class="dropdown-item" href="#">SH</a></li>
+                             <li><a class="dropdown-item" href="#">Wave</a></li>
+                             <li><a class="dropdown-item" href="#">Yupitor</a></li>
+                             <li><a class="dropdown-item" href="#">SH</a></li>
+                             <li><a class="dropdown-item" href="#">Wave</a></li>
+                             <li><a class="dropdown-item" href="#">Yupitor</a></li>
+                             <li><a class="dropdown-item" href="#">SH</a></li>
+                             <li><a class="dropdown-item" href="#">Wave</a></li>
+                             <li><a class="dropdown-item" href="#">Yupitor</a></li>
+                         </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-capslock"></i> PHÂN KHỐI LỚN
+                         </a>
+                     </li>
+     
+                     <li class="nav-item dropdown">
+                         <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-menu-button-wide"></i> LOẠI XE
+                         </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-hand-thumbs-up"></i> TỈNH THÀNH
+                         </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-graph-up-arrow"></i>  XẾP LOẠI DÒNG XE
+                         </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-hand-thumbs-up"></i> TƯ VẤN CHỌN XE
+                         </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-gear-fill"></i></i> BẢO HÀNH
+                         </a>
+                     </li>
+                     <li class="nav-item dropdown t">
+                         <a class="nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-search"></i> TÌM KIẾM
+                         </a>
+                     </li>
+                     
+                 </ul>
+                
+             </nav>
+            </div>
+        </header>
+    </div>
+    <div class="sanpham m-lg-5">
+        <div id="breadcrumbs">
+            <ul>
+                <li><a href="Xemay.html">Chợ xe máy </a>> </li>
+                <li>
+                    <a href="#">
+                     Kawasaki
+                    </a>
+                    > </li>
+                    <li>
+                    <a href="#">
+                    Z900
+                    </a>
+                    > </li>
+                
+                    <li>
+                    <a href="#">
+                    2017
+                    </a>
+                    > </li>
+                    <li><a href="#">
+                    Đỏ Đen</a>
+                    > </li>
+                    <li><a href="#">Hồ Chí Minh</a></li>
+            </ul>
+        </div>
+            <div class="row tieudexe">
+                <h5>Kawasaki Z900 Đỏ Đen - 2017 <span class="condition">
+                    Xe cũ
+                 </span></h5>
+            </div>
+       <hr class="dongke" size="5px"><div class="row">
+        <div class="col-md-5 mt-2 home-product ">     
+                <div id="nxt" class="carousel slide" data-bs-ride="true">
+                    <div id="thumbnail" class="carousel-indicators">
+                        <button type="button" data-bs-target="#nxt" data-bs-slide-to="0"
+                            class="col-3 active" aria-current="true" aria-label="Slide 1">
+                            <img class="d-block w-100"
+                                src="anhdoan/ct1.jpg"
+                                class="img-fluid" />
+                        </button>
+                        <button type="button" data-bs-target="#nxt" data-bs-slide-to="1"
+                            aria-label="Slide 2" class="col-3">
+                            <img class="d-block w-100 "
+                                src="anhdoan/ct2.jpg"
+                                class="img-fluid" />
+                        </button>
+                        <button type="button" data-bs-target="#nxt" data-bs-slide-to="2"
+                            aria-label="Slide 3" class="col-3">
+                            <img class="d-block w-100 "
+                                src="anhdoan/ct3.jpg"
+                                class="img-fluid" />
+                        </button>
+                        <button type="button" data-bs-target="#nxt" data-bs-slide-to="3"
+                            aria-label="Slide 4" class="col-3">
+                            
+                                <img class="d-block w-100 "
+                                src="anhdoan/ct4.jpg"
+                                class="img-fluid" />
+                            
+                        </button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="overflow-hidden">
+                                <img src="anhdoan/ct1.jpg "
+                                class="d-block w-100 zoom h-75 " alt="...">
+                        </div>
+                            </div>
+                        <div class="carousel-item">
+                            <div class="overflow-hidden">
+                                <img src="anhdoan/ct2.jpg"
+                                class="d-block w-100  zoom h-75" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overflow-hidden">
+                                <img src="anhdoan/ct3.jpg"
+                                class="d-block w-100  zoom h-75" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overflow-hidden">
+                                <img src="anhdoan/ct4.jpg"
+                                class="d-block w-100  zoom h-75" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#nxt" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#nxt" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>         
+        </div>
+        <div class="col-md-7">
+            <div class="gia row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-7"><h4 class="text-danger font-monospace">105.000.000 đ</h4></div>
+                        <div class="col-md-5"><h6 class="text-decoration-line-through mt-2 font-monospace">125.000.000 đ</h6></div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <a class="report-product " data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                        <i class="bi bi-bell-fill"></i> 
+                        Báo cáo vi phạm
+                    </a>
+                    <a class="small-btn-bordered" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <i class="bi bi-chat-heart left"></i>
+                        Theo dõi
+                    </a>
+                   
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content" style="margin-left:70px;">
+                            <div class="modal-header justify-content-center">
+                              <h5 class="modal-title">Vui lòng đăng nhập!!!</h5>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="rounded-pill btn-danger w-25" data-bs-dismiss="modal" >OK</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content " style="margin-left:70px;">
+                            <div class="modal-header justify-content-start">
+                              <h5>Tin này có vấn đề gì ?</h5>
+                              
+                            </div>
+                            <div class="modal-footer justify-content-start">
+                                <div class="checkbox text-dark left mb-5 ">
+                                    <label for="flexCheckChecked">
+                                        <input name="remember" type="checkbox" value="Remember Me" checked> Có dấu hiệu lừa đảo.
+                                    </label>
+                                    <br>
+                                    <label for="flexCheckChecked">
+                                        <input name="remember" type="checkbox" value="Remember Me" > Hàng đã bán.
+                                    </label>
+                                    <br>
+                                    <label for="flexCheckChecked">
+                                        <input name="remember" type="checkbox" value="Remember Me" > Không liên lạc được.
+                                    </label>
+                                    <br>
+                                    <label for="flexCheckChecked">
+                                        <input name="remember" type="checkbox" value="Remember Me" > Thông tin không đúng thực tế.
+                                    </label>
+                                    <br>
+                                    <label for="flexCheckChecked">
+                                        <input name="remember" type="checkbox" value="Remember Me" > Khác.
+                                    </label>
+                                    <br>
+                                    <label  for="flexCheckChecked">
+                                        <input style="width: 152%; height: 150px;" type="text" class="form-control mt-3 " placeholder="" />
+                                    </label>
+                                  </div>
+                                  
+                                <button type="button" class="rounded-0 btn-outline-danger w-100 btn-light" data-bs-dismiss="modal" >Gửi ngay</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+            <div class="module_body">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td >
+                                <label class=""for=""><strong>Dòng xe</strong></label>
+                            </td>
+                            <td > 
+                                <label for="">Kawasaki Z900 2017</label>
+                            </td>
+                            <td >
+                                <label for=""><strong>Đã đi</strong></label>
+                            </td>
+                            <td >
+                                <label for="">20 000 - 24 999 km</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <label for=""><strong>Xuất xứ</strong></label>
+                            </td>
+                            <td > 
+                                <label for="">Hà Tĩnh</label>
+                            </td>
+                            <td >
+                                <label for=""><strong>Đời xe</strong></label>
+                            </td>
+                            <td>
+                                <label for="">2017</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <label for=""><strong>Phân Khối</strong></label>
+                            </td>
+                            <td > 
+                                <label for="">900 cc</label>
+                            </td>
+                            <td >
+                                <label for=""><strong>Loại xe</strong></label>
+                            </td>
+                            <td>
+                                <label for="">Naked bike</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <label for=""><strong>Màu</strong></label>
+                            </td>
+                            <td > 
+                                <label for="">Đỏ Đen</label>
+                            </td>
+                            <td >
+                                <label for=""><strong>Địa điểm</strong></label>
+                            </td>
+                            <td >
+                                <label for="">Quận 8, Hồ Chí Minh</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <label for=""><strong>Ngày đăng</strong></label>
+                            </td>
+                            <td > 
+                                <label for="">20 giờ trước</label>
+                            </td>
+                            <td >
+                                <label class="text-info" for="">Xem thống kê xe Z900 khác</label>
+                            </td>
+                        
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row w-100 m-lg-0">
+                <div class="customer_info">
+                    <p class="name">
+                        Liên hệ mua xe: <span class="text-info"><strong>Thiên trà Motor</strong></span> Xe được bán thuộc cửa hàng: <span class="text-info"><strong>Thiên trà Motor</strong></span>
+                    </p>
+                    <div class="action">
+                       <button class="btn btn-success text-light mt-3 p-md-2 rounded-0 mb-2 z" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="bi bi-emoji-laughing"></i></i> Bấm vào để mua ngay
+                       </button>
+                       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div style="background-color:black;"class="offcanvas-header">
+                            <img src="anhdoan/logo.png" alt="">                                        
+                          <button type="button" class="btn-close bg-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div>
+                            
+                            <form class="needs-validation" >         
+                                <fieldset>
+                                      <div class="form-group">
+                                        <h4 class="offcanvas-title mb-2 text-dark" id="offcanvasExampleLabel">Đăng nhập</h4>
+                                        <input class="form-control" placeholder="E-mail" name="email" type="text" >
+                                      </div>
+                                      <div class="form-group mt-3">
+                                        <input class="form-control" placeholder="Password" name="password" type="password" >
+                                      </div>
+                                      <div class="checkbox mt-2 text-dark ">
+                                        <label>
+                                            <input name="remember" type="checkbox" value="Remember Me"> Lưu thông tin
+                                        </label>
+                                    </div>
+                                    <button class="btn btn-danger w-100 mt-2 "><a href="tinhtien.html" class="text-decoration-none text-light">Đăng nhập</a></button>
+                                      <div class="row mt-2">
+                                        <div class="col-md-8 text-danger">Quên mật khẩu</div>
+                                        <div class="col-md-4  text-danger">Đăng kí ngay</div>
+                                      </div>
+                                      <hr>
+                                      <p class="text-center">Hoặc</p>
+                                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        
+                                        <button type="button" class="btn btn-light btn-outline-info rounded-0 m-2"><i class="bi bi-facebook"></i> Facebook</button>
+                                        <button type="button" class="btn btn-light btn-outline-warning rounded-0 m-2"><i class="bi bi-google"></i> Google</button>
+                                        <button type="button" class="btn btn-light btn-outline-danger rounded-0 m-2"><i class="bi bi-envelope-fill"></i> Gmail</button>
+                                      </div>
+                                </fieldset>
+                                </form>
+                          </div>  
+                        </div>
+                      </div>
+                           <p class="text-danger right mt-3">* Vui lòng cho người bán biết bạn đã tìm thấy xe của họ tại Webike</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2">
+                <h6>MUA XE AN TOÀN</h6>
+            
+                <p class="quydinh">
+                    <span class="text-danger">KHÔNG ĐẶT CỌC, CHUYỂN KHOẢN </span>trước khi nhận xe. <br>
+                    Kiểm tra kỹ giấy tờ xe và các giấy tờ mua bán liên quan.<br>
+                    Hẹn gặp, giao dịch ở nơi an toàn.
+                </p>
+            </div>
+        </div>
+       </div>
+    </div>
+    <section>
+        <div class="product_info container pos">
+            <div class="row">
+               <div class="col-md-6">
+                <h6 class="text-success m-2">MÔ TẢ XE</h6>
+               <div class="mota mt-3 btn text-start  w-100">
+                  <p>Lên sàn bé kawasaki z long lanh lung linh</p>
+                  <p>- HQCN biển số thành phố ưa nhìn</p>
+                  <p>- Máy móc ngon lành, zin đét, máy êm ái</p>
+                  <p>- Pô nổ uy lực, giải tán đám đông</p>
+                  <p>- Điện đóm ngon nghẻ, ABS hoạt động ổn định</p>
+                  <p>- Chảng ba, gắp ngon lành không sàn lắc, chao nghiêng say xỉn</p>
+                  <p>- Phuộc trước sau ngon lành, bao nhún nhảy không xì dầu</p>
+                  <hr>
+                  <p>Chỉ với 1xx tr là lượm e nó về thôi</p>
+                  <p>Alo - 038 Trà để ép giá</p>
+                  <p>Có hỗ trợ trả góp qua thẻ tín dụng</p>
+                  <p>Fanpage: Thiên Trà Motor</p>
+                  <p>Website: <span class="text-danger"> https://muabanmotor.com/</span></p>
+               </div>
+               </div>
+               <div class="col-md-6">
+                    <h6 class="text-danger"t>THÔNG SỐ KỸ THUẬT CỦA "Z900 2018"</h6>
+                    <table class="table table-striped mt-4">
+                        <tr><td> Động cơ:	DOHC, 4 xi-lanh thẳng hàng</td></tr>
+                        <tr><td>Hệ thống khởi động: tự do</td></tr>
+                        <tr><td>Công suất cực đại:	125 Hp tại 9.500 vòng/phút</td></tr>
+                        <tr><td>Momen xoắn cực đại:	99 Nm tại 7.700 vòng.phút</td></tr>
+                        <tr><td>Kích thước:  500                        (mm)</td></tr>
+                        <tr><td>Chiều cao yên:	795 (mm)</td></tr>
+                        <tr><td>Khoảng sáng gầm xe:	50000(mm)</td></tr>
+                        <tr><td>Dung tích bình xăng:	17 (Lít)</td></tr>
+                        <tr><td>Trọng lượng:	210 (kg)</td></tr>
+                    </table>
+               </div>
+            </div>
+    </section>
+    <section>
+        <div class="container-fluid p-md-5">
+            <div class="title-second">
+                <h6 class="name ">Dòng xe được xem nhiều nhất <a class="right" href="#">
+                    Xem tất cả
+                </a>
+                </h6>
+            </div>
+            <div class="grid-item-slide ">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row anhdemo">
+                            <div class="col-md-2 ">
+                                <img class=""src="anhdoan/c3.jpg" alt="">
+                                <h6 class="text-center "> Honda AirBlade 110</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="anhdoan/c2.jpg" alt="">
+                                <h6 class="text-center ">Honda WAVE 100 RS</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="anhdoan/c7.jpg" alt="">
+                                <h6 class="text-center ">YAMAHA Exciter 135</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="anhdoan/c4.png" alt="">
+                                <h6 class="text-center ">Honda Airblade 125 Fi</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="anhdoan/c5.jpg" alt="">
+                                <h6 class="text-center ">YAMAHA Sirius</h6>
+                            </div>
+                            <div class="col-md-2 ">
+                                <img src="anhdoan/c6.jpg" alt="">
+                                <h6 class="text-center ">Honda Vision 110</h6>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row  anhdemo">
+                            <div class="col-md-2">
+                                <img src="anhdoan/c7.jpg" alt="">
+                                <h6 class="text-center ">Honda AirBlade 110</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="anhdoan/c8.jpg" alt="">
+                                <h6 class="text-center">Honda SH 125</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="anhdoan/c9.jpg" alt="">
+                                <h6 class="text-center ">Honda Dream II</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="anhdoan/c10.jpg" alt="">
+                                <h6 class="text-center ">Honda Winner 150</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="anhdoan/c13.jpg" alt="">
+                                <h6 class="text-center ">Honda SH 150i</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="anhdoan/c12.jpg" alt="">
+                                <h6 class="text-center ">YAMAHA Exciter 150</h6>
+                            </div>
+                        </div>
+                      </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon prev" aria-hidden="true"></span>
+                        <span class="visually-hidden text-danger">Previous</span>
+                      </button>
+                      <button class=" carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon next" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer2">
+          <div class="row">
+            <div class="col-md-3 float">
+                <h6 class="text-light m-lg-4">THÔNG TIN LIÊN HỆ</h6>
+                <div class="basic-info m-lg-4">
+                <p>Lầu 20, tòa nhà Havana, số 132 Hàm Nghi, P. Bến Thành, Q.1, TP. HCM.</p>
+                <p>Email: support@webike.vn</p>
+                <p>Số bàn: 028 3821 0587</p>
+                </div>
+                <img  class="w-75 m-lg-3"src="anhdoan/pay8.svg" alt="">
+            </div>
+            <div class="col-md-2">
+                <h6 class="text-light m-lg-4">SIÊU THỊ PHỤ TÙNG</h6>
+                <ul class="text-light"t>
+                    <li>Dòng xe</li>
+                    <li>Hãng xe</li>
+                    <li>Chính hãng</li>
+                    <li>Phụ tùng</li>
+                    <li>Đồ bảo hộ</li>
+                    <li>Mũ bảo hộ </li>
+                    <li>Phụ kiện</li>
+                    <li>Thành viên</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6 class="text-light m-lg-4">CHỢ XE MÁY</h6>
+                <ul class="text-light">
+                    <li>Phân khối lớn</li>
+                    <li>Hãng xe</li>
+                    <li>Phân khối</li>
+                    <li>Loại xe</li>
+                    <li>Tỉnh thành</li>
+                    <li>Cửa hàng</li>
+                    <li>Tiện ích</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6 class="text-light m-lg-4">TIN TỨC XE MÁY</h6>
+                <ul class="text-light">
+                    <li>Quy chế hoạt động</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Bản quyền</li>
+                    <li>Hỗ trợ khách hàng</li>
+                    <li>Sơ đồ trang</li>
+                    <li>Liên hệ</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="text-light m-lg-4">PHƯƠNG THỨC THANH TOÁN</h6>
+                  <div class="thanhtoan">
+                     <div class="row">
+                        <div class="col-md-3">
+                            <img src="anhdoan/pay1.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="anhdoan/pay2.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="anhdoan/pay3.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="anhdoan/pay4.png" alt="">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class=" col-md-6">
+                            <img src="anhdoan/pay5.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="anhdoan/pay6.png" alt="">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                            <img class="w-100 h-100"src="anhdoan/pay7.png" alt="">
+                        </div>
+                     </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer3 bg-dark pb-md-2">
+            <p class="text-light text-center pt-3">© 2022 Webike Vietnam. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
